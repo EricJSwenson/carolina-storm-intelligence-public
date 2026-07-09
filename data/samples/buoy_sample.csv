@@ -1,0 +1,4 @@
+station,obs_time,wind_speed_ms,gust_ms,pressure_mb,air_temp_c,water_temp_c,wave_height_m
+CLKN7,2011-08-27T11:00:00Z,32.1,41.0,968.0,25.0,27.0,MM
+BFTN7,2018-09-14T10:00:00Z,28.4,36.0,972.0,24.0,28.0,MM
+41064,2019-09-06T08:00:00Z,30.0,38.5,965.0,26.0,28.5,6.2

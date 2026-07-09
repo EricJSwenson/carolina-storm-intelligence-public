@@ -1,0 +1,16 @@
+# Local DuckDB profile so the dbt models run against the demo warehouse.
+# A Databricks profile (dbt-databricks) is swapped in for production.
+storm_eval:
+  target: local
+  outputs:
+    local:
+      type: duckdb
+      path: ../../data/warehouse.duckdb
+      threads: 4
+    databricks:
+      type: databricks
+      catalog: storm
+      schema: analytics
+      host: "{{ env_var('DATABRICKS_HOST') }}"
+      http_path: "{{ env_var('DATABRICKS_HTTP_PATH') }}"
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"

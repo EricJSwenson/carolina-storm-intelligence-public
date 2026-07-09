@@ -1,0 +1,16 @@
+# Default run configuration (offline / local).
+backends:
+  embedding: local            # local | openai | sentence-transformers
+  llm: mock-grounded          # mock-grounded | mock-naive | openai | ollama
+  vectorstore: local          # local | chroma | pinecone
+
+chunking:
+  size: 320
+  overlap: 48
+
+retrieval:
+  top_k: 4
+  rerank: lexical             # none | lexical | cross-encoder
+
+warehouse: data/warehouse.duckdb
+vectorstore_dir: data/vectorstore

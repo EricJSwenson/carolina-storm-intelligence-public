@@ -1,0 +1,31 @@
+# Core (offline demo + tests)
+numpy>=1.26
+scipy>=1.11
+duckdb>=0.10
+jinja2>=3.1
+pyyaml>=6.0
+
+# Serving
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6
+
+# Dashboard
+streamlit>=1.33
+pandas>=2.2
+plotly>=5.20
+
+# Modeling (landfall-intensity model + live estimate)
+scikit-learn>=1.3
+
+# Dev
+pytest>=8.0
+ruff>=0.4
+
+# --- optional backends (not needed to run the app or tests) ---
+# mlflow>=2.12              # experiment tracking server (dashboard shows a static snapshot without it)
+# openai>=1.30
+# sentence-transformers>=2.7
+# chromadb>=0.5
+# pyspark>=3.5
+# dbt-databricks>=1.7

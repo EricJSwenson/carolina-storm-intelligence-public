@@ -1,0 +1,27 @@
+name: Eval Regression Gate
+
+# Runs the offline benchmark on every PR and nightly. Fails the build if the
+# grounded model's hallucination rate regresses above threshold -- the same
+# gate that, in production, blocks promotion of a model/prompt change.
+
+on:
+  pull_request:
+  schedule:
+    - cron: "0 6 * * *"   # nightly 06:00 UTC
+
+jobs:
+  eval-gate:
+    runs-on: ubuntu-latest
+    env:
+      MAX_HALLUCINATION_RATE: "0.10"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: |
+          pip install numpy scipy duckdb jinja2 pyyaml scikit-learn
+          pip install -e .
+      - name: Run benchmark gate
+        run: python scripts/eval_gate.py

@@ -1,0 +1,11 @@
+name: storm_eval
+version: "1.0.0"
+config-version: 2
+profile: storm_eval
+model-paths: ["models"]
+models:
+  storm_eval:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

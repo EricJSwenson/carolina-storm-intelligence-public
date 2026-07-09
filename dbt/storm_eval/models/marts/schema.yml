@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: fct_evaluations
+    description: One row per model/question for the latest run, with hallucination flags.
+    columns:
+      - name: model
+        tests: [not_null]
+      - name: reward
+        tests: [not_null]
+  - name: agg_model_performance
+    description: Per-model leaderboard powering the dashboard and promotion gate.
+    columns:
+      - name: model
+        tests: [not_null, unique]

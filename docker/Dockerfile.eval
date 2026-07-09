@@ -1,0 +1,8 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir numpy scipy duckdb jinja2 pyyaml
+COPY . .
+ENV PYTHONPATH=/app/src
+# Runs the full offline pipeline + benchmark; useful as a batch eval job.
+CMD ["python", "scripts/run_local_pipeline.py"]

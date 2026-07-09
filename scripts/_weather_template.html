@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carolina Storm Intelligence</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#07111f; --panel:#0e1d30; --panel2:#10233a; --line:#1c3047;
+    --text:#e6eef7; --muted:#7c94ad; --signal:#ef4444;
+    --c0:#5b8fb0; --c1:#22d3ee; --c2:#fde047; --c3:#fb923c; --c4:#f43f5e; --c5:#c026d3;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:
+      radial-gradient(1200px 600px at 70% -10%, #102844 0%, transparent 60%),
+      var(--bg);
+    color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.5}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 22px 60px}
+  header.bar{display:flex;align-items:baseline;justify-content:space-between;
+    border-bottom:1px solid var(--line);padding:20px 0 16px;flex-wrap:wrap;gap:10px}
+  .brand{font-family:'Saira Condensed',sans-serif;font-weight:700;letter-spacing:.04em;
+    font-size:30px;text-transform:uppercase;display:flex;align-items:center;gap:12px}
+  .flag{flex:none;border-radius:4px;box-shadow:0 0 14px rgba(239,68,68,0.45)}
+  .brand b{color:var(--signal)}
+  .status{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted)}
+  .status .dot{display:inline-block;width:8px;height:8px;border-radius:50%;
+    background:var(--c1);margin-right:7px;box-shadow:0 0 8px var(--c1);animation:pulse 2.4s infinite}
+  @keyframes pulse{50%{opacity:.4}}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--signal);margin:26px 0 6px}
+  h1.hero{font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:clamp(30px,5vw,52px);
+    line-height:1.02;margin:0 0 8px;max-width:760px}
+  .sub{color:var(--muted);max-width:620px;margin:0 0 18px}
+  .cta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:0 0 26px}
+  .cta-btn{font-family:'Saira Condensed',sans-serif;text-transform:uppercase;letter-spacing:.05em;
+    font-weight:600;font-size:15px;background:var(--signal);color:#10233a;text-decoration:none;
+    padding:11px 20px;border-radius:9px;transition:.15s;box-shadow:0 0 18px rgba(239,68,68,.35)}
+  .cta-btn:hover{filter:brightness(1.08);box-shadow:0 0 26px rgba(239,68,68,.55)}
+  .cta-note{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted)}
+  .cta-link{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--text);text-decoration:none;
+    border-bottom:1px solid var(--line)}
+  .cta-link:hover{border-color:var(--signal)}
+  .foot-link{color:var(--signal);text-decoration:none}
+  .foot-link:hover{text-decoration:underline}
+  .panel{background:linear-gradient(180deg,var(--panel) 0%,var(--panel2) 100%);
+    border:1px solid var(--line);border-radius:12px}
+  #map{height:480px;width:100%}
+  .maprow{display:grid;grid-template-columns:1fr;gap:0}
+  .controls{display:flex;align-items:center;gap:12px;padding:14px 16px;border-top:1px solid var(--line);flex-wrap:wrap}
+  .ctl-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:var(--muted)}
+  #stormSelect{font-family:'IBM Plex Mono',monospace;font-size:13px;background:#0b1a2c;
+    color:var(--text);border:1px solid var(--line);border-radius:8px;padding:8px 12px;min-width:230px;cursor:pointer}
+  #stormSelect:hover{border-color:var(--signal)}
+  .fin{width:74px;font-family:'IBM Plex Mono',monospace;font-size:12px;background:#0b1a2c;
+    color:var(--text);border:1px solid var(--line);border-radius:7px;padding:7px 9px}
+  .fin:focus,#catMin:focus{outline:none;border-color:var(--signal)}
+  #catMin{font-family:'IBM Plex Mono',monospace;font-size:12px;background:#0b1a2c;color:var(--text);
+    border:1px solid var(--line);border-radius:7px;padding:7px 9px;cursor:pointer}
+  .count{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);margin-left:auto}
+  .dbwrap{max-height:360px;overflow:auto}
+  .grid{display:grid;grid-template-columns:1.3fr 1fr;gap:18px;margin-top:18px}
+  .card-h{font-family:'Saira Condensed',sans-serif;font-weight:600;letter-spacing:.03em;
+    text-transform:uppercase;font-size:15px;padding:14px 16px;border-bottom:1px solid var(--line);
+    display:flex;justify-content:space-between;align-items:center}
+  .card-h .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);text-transform:none}
+  #intensity{height:230px;width:100%}
+  .readout{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:14px 16px;color:var(--muted)}
+  .readout b{color:var(--text);font-weight:500}
+  .readout .row{display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px dashed #16293f}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{text-align:left;padding:10px 16px;border-bottom:1px solid var(--line)}
+  th{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--muted);font-weight:500}
+  tr.sel td{background:#12273f}
+  td.mono{font-family:'IBM Plex Mono',monospace}
+  .cat{display:inline-block;min-width:46px;text-align:center;font-family:'IBM Plex Mono',monospace;
+    font-size:11px;font-weight:500;padding:3px 8px;border-radius:5px;color:#06131f}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+  .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:16px}
+  .metric{background:#0b1a2c;border:1px solid var(--line);border-radius:9px;padding:12px}
+  .metric .v{font-family:'Saira Condensed',sans-serif;font-size:30px;font-weight:700;color:var(--signal)}
+  .metric .l{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--muted);
+    text-transform:uppercase;letter-spacing:.1em}
+  .note{font-size:12px;color:var(--muted);padding:0 16px 16px}
+  .qa{padding:8px 16px 16px}
+  .muted2{color:var(--muted);font-size:12.5px}
+  .btn-sm{font-family:'IBM Plex Mono',monospace;font-size:11px;background:#0b1a2c;color:var(--text);
+    border:1px solid var(--line);border-radius:7px;padding:6px 10px;cursor:pointer}
+  .btn-sm:hover{border-color:var(--signal)}
+  .localwrap{display:grid;grid-template-columns:1.3fr 1fr;gap:0;padding:0}
+  .localcol{padding:14px 16px;font-size:13px}
+  .localcol:first-child{border-right:1px solid var(--line)}
+  .localcol h4{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+  .localcol .row{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px dashed #16293f}
+  .chat{padding:14px 16px}
+  .chatbox{display:flex;gap:8px}
+  #askInput{flex:1;font-size:13px;background:#0b1a2c;color:var(--text);border:1px solid var(--line);
+    border-radius:8px;padding:9px 12px}
+  #askInput:focus{outline:none;border-color:var(--signal)}
+  #askBtn{font-family:'Saira Condensed',sans-serif;text-transform:uppercase;letter-spacing:.04em;
+    background:var(--signal);color:#10233a;border:none;border-radius:8px;padding:9px 16px;cursor:pointer;font-weight:600}
+  .answer{margin:12px 0;font-size:14px;min-height:20px}
+  .answer .src{display:block;margin-top:6px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--c1)}
+  .suggest{display:flex;flex-wrap:wrap;gap:7px}
+  .suggest span{font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:999px;
+    padding:5px 10px;cursor:pointer}
+  .suggest span:hover{border-color:var(--signal);color:var(--text)}
+  @media(max-width:880px){.localwrap{grid-template-columns:1fr}.localcol:first-child{border-right:none;border-bottom:1px solid var(--line)}}
+  .qa .item{border-top:1px solid var(--line);padding:13px 0}
+  .qa .q{font-weight:600;font-size:13.5px}
+  .qa .a{color:var(--muted);font-size:13px;margin:4px 0 6px}
+  .verified{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--c1);
+    border:1px solid #14463f;background:#0a201c;border-radius:5px;padding:2px 8px;display:inline-block}
+  footer{color:var(--muted);font-size:12px;margin-top:34px;border-top:1px solid var(--line);padding-top:16px}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);padding:0 16px 14px}
+  .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
+  @media(max-width:880px){.grid,.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="bar">
+    <div class="brand">
+      <svg class="flag" viewBox="0 0 40 40" width="30" height="30" aria-label="storm warning flag">
+        <rect x="2" y="2" width="36" height="36" rx="3" fill="#ef4444"/>
+        <rect x="14" y="14" width="12" height="12" fill="#0a0a0a"/>
+      </svg>
+      Carolina <b>Storm</b> Intelligence
+    </div>
+    <div class="status"><span class="dot"></span>SYSTEM ONLINE · SOURCE: NOAA HURDAT2 · OFFICE KMHX</div>
+  </header>
+
+  <div class="eyebrow">Atlantic best-track · historical analysis</div>
+  <h1 class="hero">Every Carolina landfall, on one chart &mdash; graded against the record.</h1>
+  <p class="sub">An interactive storm-intelligence layer over NOAA best-track data, paired with a
+  retrieval assistant and a landfall-intensity model whose answers and predictions are
+  verified against HURDAT2 ground truth.</p>
+
+  <div class="cta">
+    <a class="cta-btn" href="https://carolina-storm-intelligence.streamlit.app/" target="_blank" rel="noopener">Open the live console &rarr;</a>
+    <span class="cta-note">live data &middot; model evaluation &middot; storm center</span>
+    <a class="cta-link" href="https://github.com/EricjSwenson/carolina-storm-intelligence" target="_blank" rel="noopener">View source on GitHub</a>
+  </div>
+
+  <div class="panel maprow">
+    <div id="map"></div>
+    <div class="legend" id="legend"></div>
+    <div class="controls">
+      <span class="ctl-label">STORM</span>
+      <select id="stormSelect"></select>
+      <span class="ctl-label">YEAR</span>
+      <input id="yearMin" type="number" class="fin" title="from year">
+      <span style="color:var(--muted)">–</span>
+      <input id="yearMax" type="number" class="fin" title="to year">
+      <span class="ctl-label">MIN CAT</span>
+      <select id="catMin">
+        <option value="0">TS+</option><option value="1">1+</option><option value="2">2+</option>
+        <option value="3">3+</option><option value="4">4+</option><option value="5">5</option>
+      </select>
+      <input id="nameSearch" class="fin" style="width:120px" placeholder="name…">
+      <span class="count" id="count"></span>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="panel">
+      <div class="card-h">Intensity history <span class="tag" id="intensityTag">select a storm</span></div>
+      <div id="intensity"></div>
+    </div>
+    <div class="panel">
+      <div class="card-h">Advisory readout <span class="tag">hover the track</span></div>
+      <div class="readout" id="readout"></div>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:18px">
+    <div class="card-h">Storm database <span class="tag" id="dbcount"></span></div>
+    <div class="dbwrap">
+    <table id="db"><thead><tr>
+      <th>Storm</th><th>Year</th><th>Peak wind</th><th>Peak</th><th>NC landfall</th>
+    </tr></thead><tbody></tbody></table>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:18px">
+    <div class="card-h">Local conditions
+      <span style="display:flex;gap:8px;align-items:center;margin-left:auto;flex-wrap:wrap">
+        <span class="tag" id="locTag">—</span>
+        <input id="locInput" class="fin" style="width:140px" placeholder="city, ZIP, or lat,lon">
+        <button id="setLoc" class="btn-sm">Set</button>
+        <button id="useLoc" class="btn-sm">📍 My location</button>
+      </span></div>
+    <div class="localwrap">
+      <div id="localFc" class="localcol"><span class="muted2">loading forecast…</span></div>
+      <div id="localTide" class="localcol"><span class="muted2">loading tides…</span></div>
+    </div>
+  </div>
+
+  <div class="two">
+    <div class="panel">
+      <div class="card-h">Landfall-intensity model <span class="tag">held-out · year-split</span></div>
+      <div class="metrics" id="metrics"></div>
+      <p class="note">Gradient-boosted classifier predicting NC landfall category from a storm's
+      pre-landfall track. Trained on synthetic best-tracks for this demo; swap in the full
+      HURDAT2 record for production. Evaluated on storms held out by year (no leakage).</p>
+    </div>
+    <div class="panel">
+      <div class="card-h">Storm assistant <span class="tag">retrieval · narrative corpus</span></div>
+      <div class="chat">
+        <div class="chatbox">
+          <input id="askInput" placeholder="Ask about a storm… e.g. Florence landfall">
+          <button id="askBtn">Ask</button>
+        </div>
+        <div id="answer" class="answer"></div>
+        <div id="suggest" class="suggest"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Data: NOAA HURDAT2 Atlantic best-track &amp; NWS/NCEI narratives (public domain).
+    Bundled sample = Florence (2018), Dorian (2019), Irene (2011). Built as a portfolio
+    project demonstrating data engineering, RAG, LLM evaluation, and applied ML.
+    <br>
+    <a class="foot-link" href="https://carolina-storm-intelligence.streamlit.app/" target="_blank" rel="noopener">Live console &rarr;</a>
+    &middot;
+    <a class="foot-link" href="https://github.com/EricjSwenson/carolina-storm-intelligence" target="_blank" rel="noopener">Source on GitHub</a>
+  </footer>
+</div>
+
+<script>
+const DATA = __DATA__;
+const CC = DATA.catColors;
+const catLabel = c => c===0 ? "TS" : "C"+c;
+const catColor = c => CC[c] ?? CC[0];
+
+/* ---------- map ---------- */
+const traces = [];
+DATA.storms.forEach(s=>{
+  traces.push({
+    type:"scattergeo", mode:"lines+markers", name:s.name,
+    lon:s.track.map(t=>t.lon), lat:s.track.map(t=>t.lat),
+    line:{width:1.1,color:"rgba(230,238,247,0.12)"},
+    marker:{size:s.track.map(t=>t.landfall?12:4),
+      symbol:s.track.map(t=>t.landfall?"star":"circle"),
+      color:s.track.map(t=>catColor(t.cat)),
+      line:{width:s.track.map(t=>t.landfall?1.5:0.4),color:"#07111f"}},
+    text:s.track.map(t=>`${s.name} · ${t.time}<br>${t.wind} kt · ${t.pres} mb · ${catLabel(t.cat)}${t.landfall?" · LANDFALL":""}`),
+    hoverinfo:"text", customdata:s.track.map(t=>({s:s.name,...t})), meta:s.id
+  });
+});
+const geoLayout = {
+  paper_bgcolor:"rgba(0,0,0,0)", plot_bgcolor:"rgba(0,0,0,0)",
+  margin:{l:0,r:0,t:8,b:0}, showlegend:false,
+  geo:{scope:"north america", resolution:50,
+    lataxis:{range:[18,42]}, lonaxis:{range:[-92,-55]},
+    bgcolor:"rgba(0,0,0,0)", landcolor:"#0c1b2c", oceancolor:"#081523",
+    showocean:true, lakecolor:"#081523", showlakes:true,
+    coastlinecolor:"#26425f", countrycolor:"#26425f", subunitcolor:"#1a3149",
+    showsubunits:true, showcountries:true, framecolor:"#1a3149"}
+};
+Plotly.newPlot("map", traces, geoLayout, {displayModeBar:false, responsive:true});
+
+document.getElementById("map").on("plotly_hover", e=>{
+  const d = e.points[0].customdata; if(!d) return;
+  document.getElementById("readout").innerHTML =
+    `<div class="row"><span>STORM</span><b>${d.s}</b></div>
+     <div class="row"><span>TIME</span><b>${d.time}</b></div>
+     <div class="row"><span>POSITION</span><b>${d.lat.toFixed(1)}&deg;N ${Math.abs(d.lon).toFixed(1)}&deg;W</b></div>
+     <div class="row"><span>MAX WIND</span><b>${d.wind} kt</b></div>
+     <div class="row"><span>MIN PRES</span><b>${d.pres} mb</b></div>
+     <div class="row"><span>CATEGORY</span><b style="color:${catColor(d.cat)}">${catLabel(d.cat)}${d.landfall?" · LANDFALL":""}</b></div>`;
+});
+
+/* ---------- legend ---------- */
+document.getElementById("legend").innerHTML =
+  [0,1,2,3,4,5].map(c=>`<span><i style="background:${catColor(c)}"></i>${c===0?"TS/TD":"Cat "+c}</span>`).join("")
+  + `<span><i style="background:#fff;border-radius:0;clip-path:polygon(50% 0,100% 100%,0 100%)"></i>landfall</span>`;
+
+/* ---------- intensity chart ---------- */
+function showIntensity(s){
+  document.getElementById("intensityTag").textContent = s.name+" ("+s.year+")";
+  Plotly.newPlot("intensity",[{
+    type:"scatter", mode:"lines+markers", x:s.track.map((_,i)=>i*6),
+    y:s.track.map(t=>t.wind),
+    line:{color:"rgba(239,68,68,0.7)",width:2},
+    marker:{size:s.track.map(t=>t.landfall?12:6),
+      symbol:s.track.map(t=>t.landfall?"star":"circle"),
+      color:s.track.map(t=>catColor(t.cat))},
+    text:s.track.map(t=>`${t.wind} kt · ${catLabel(t.cat)}`), hoverinfo:"text+x"
+  }],{
+    paper_bgcolor:"rgba(0,0,0,0)", plot_bgcolor:"rgba(0,0,0,0)",
+    margin:{l:42,r:14,t:10,b:34}, font:{color:"#7c94ad",size:11,family:"IBM Plex Mono"},
+    xaxis:{title:"hours from genesis",gridcolor:"#16293f",zeroline:false},
+    yaxis:{title:"wind (kt)",gridcolor:"#16293f",zeroline:false}
+  },{displayModeBar:false,responsive:true});
+}
+
+/* dropdown + table render for a given (filtered) list */
+function renderList(list){
+  document.getElementById("stormSelect").innerHTML =
+    list.map(s=>`<option value="${s.id}">${s.name} (${s.year}) — ${catLabel(s.peak_cat)}</option>`).join("");
+  document.getElementById("stormSelect").onchange = e=>select(e.target.value);
+  document.querySelector("#db tbody").innerHTML = list.map(s=>`
+    <tr data-id="${s.id}">
+      <td><b>${s.name}</b></td>
+      <td class="mono">${s.year}</td>
+      <td class="mono">${s.peak_wind} kt</td>
+      <td><span class="cat" style="background:${catColor(s.peak_cat)}">${catLabel(s.peak_cat)}</span></td>
+      ${lfCell(s.landfall_cat)}</tr>`).join("");
+  document.querySelectorAll("#db tbody tr").forEach(r=>r.onclick=()=>select(r.dataset.id));
+  document.getElementById("count").textContent = `${list.length} of ${DATA.storms.length} storms · ${DATA.source}`;
+  document.getElementById("dbcount").textContent = `${list.length} storms shown`;
+}
+
+const lfCell = c => c===null
+  ? `<td class="mono" style="color:#5b7088">—</td>`
+  : `<td><span class="cat" style="background:${catColor(c)}">${catLabel(c)}</span></td>`;
+
+function applyFilters(){
+  const ymin = +document.getElementById("yearMin").value || -Infinity;
+  const ymax = +document.getElementById("yearMax").value || Infinity;
+  const cmin = +document.getElementById("catMin").value;
+  const name = document.getElementById("nameSearch").value.trim().toLowerCase();
+  const pass = s => s.year>=ymin && s.year<=ymax && s.peak_cat>=cmin
+                    && (!name || s.name.toLowerCase().includes(name));
+  Plotly.restyle("map", {visible: DATA.storms.map(s=>pass(s)?true:"legendonly")});
+  const list = DATA.storms.filter(pass);
+  renderList(list);
+  if(list.length) select(list[0].id);
+}
+
+function select(id){
+  const s = DATA.storms.find(x=>x.id===id);
+  if(!s) return;
+  showIntensity(s);
+  document.getElementById("stormSelect").value = id;
+  document.querySelectorAll("#db tbody tr").forEach(r=>{
+    const on = r.dataset.id===id;
+    r.classList.toggle("sel",on);
+    if(on) r.scrollIntoView({block:"nearest"});
+  });
+  const idx = DATA.storms.findIndex(x=>x.id===id);
+  Plotly.restyle("map",{"line.color":DATA.storms.map((_,i)=>i===idx?"rgba(239,68,68,0.95)":"rgba(230,238,247,0.10)")});
+}
+
+/* init filter defaults from data + wire events */
+(function initFilters(){
+  const years = DATA.storms.map(s=>s.year);
+  document.getElementById("yearMin").value = Math.min(...years);
+  document.getElementById("yearMax").value = Math.max(...years);
+  ["yearMin","yearMax","catMin","nameSearch"].forEach(id=>{
+    document.getElementById(id).addEventListener("input", applyFilters);
+    document.getElementById(id).addEventListener("change", applyFilters);
+  });
+})();
+
+renderList(DATA.storms);
+
+
+/* ---------- model metrics ---------- */
+const m = DATA.model;
+document.getElementById("metrics").innerHTML = `
+  <div class="metric"><div class="v">${(m.accuracy*100).toFixed(0)}%</div><div class="l">exact accuracy</div></div>
+  <div class="metric"><div class="v">${(m.within_one*100).toFixed(0)}%</div><div class="l">within 1 cat</div></div>
+  <div class="metric"><div class="v">${m.macro_f1.toFixed(2)}</div><div class="l">macro F1</div></div>`;
+
+/* ---------- in-browser storm assistant (mirrors the offline grounded model) ---------- */
+const STOP = new Set("the a an of in on at to and or for with as is was were by from".split(" "));
+// Generic weather/geography words that DON'T identify a specific storm -- a query
+// must share something more specific (a storm or place name) to get an answer.
+const GENERIC = new Set(("hurricane hurricanes storm storms tropical cyclone cyclones depression "
+  +"landfall landfalls ashore make makes made making come came category cat coast coastal shore "
+  +"shoreline north south east west carolina carolinas wind winds kt knots mph gusts surge flooding "
+  +"flood floods freshwater rainfall rain rains damage damaging destructive expected anticipated near "
+  +"along across produced producing water waters levels level feet foot ft mb millibars pressure "
+  +"intensity intense peak peaked maximum sustained season conditions threat threats primary life "
+  +"threatening area region inland offshore open atlantic gulf day days today tonight night morning "
+  +"week mariners port seas wave waves building move moving track approaching "
+  +"nc sc nws forecast discussion newport morehead city public advisory bulletin statement office "
+  +"january february march april may june july august september october november december").split(" "));
+const tok = s => (s.toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>!STOP.has(w));
+const CORPUS_SENTS = [];
+(DATA.corpus||[]).forEach(d=>{
+  (d.text.match(/[^.!?]+[.!?]/g)||[d.text]).forEach(snt=>{
+    const t=snt.trim(); if(t) CORPUS_SENTS.push({doc:d.id, text:t, toks:new Set(tok(t))});
+  });
+});
+const N = CORPUS_SENTS.length || 1;
+const DF = {};
+CORPUS_SENTS.forEach(s=>s.toks.forEach(t=>{DF[t]=(DF[t]||0)+1;}));
+const idf = t => Math.log((N+1)/((DF[t]||0)+0.5));
+
+const HURR_KW=/\b(hurricane|storm|cyclone|typhoon|tropical|landfall|category|saffir|surge|eyewall|nhc)\b/i;
+const IMPACT_KW=/\b(damage|damages|cost|costs|deaths?|died|killed|fatalit|casualt|destroy|billion|million|dollars?|lives?|toll|injur|evacuat|impact)\b/i;
+const GREETING=/^(hi|hello|hey|yo|howdy|greetings|good (morning|afternoon|evening)|thanks|thank you|sup)\b/i;
+const STORM_NAMES=new Set("helene florence dorian irene matthew floyd fran hazel hugo isabel isaias ophelia bonnie arthur bertha diana charley frances jeanne katrina rita wilma sandy harvey maria michael irma ian ida nicole idalia debby milton fiona beryl gabrielle humberto".split(" "));
+
+function setAnswer(html){ document.getElementById("answer").innerHTML=html; }
+
+function corpusAnswer(query){
+  const qToks=[...new Set(tok(query))].filter(t=>!GENERIC.has(t));
+  const landfallQ=/landfall|ashore/.test(query.toLowerCase());
+  let best=null, bestScore=0;
+  for(const s of CORPUS_SENTS){
+    let base=0; qToks.forEach(t=>{ if(s.toks.has(t)) base+=idf(t); });
+    if(base<=0) continue;
+    const score=base + (landfallQ && /landfall|ashore/.test(s.text.toLowerCase()) ? 0.4 : 0);
+    if(score>bestScore){ bestScore=score; best=s; }
+  }
+  return best;
+}
+
+async function wikiLookup(query){
+  const term = HURR_KW.test(query) ? query : query + " hurricane";
+  const sUrl=`https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(term)}&srlimit=4&format=json&origin=*`;
+  const hits=((await (await fetch(sUrl)).json()).query||{}).search||[];
+  for(const h of hits){
+    const eUrl=`https://en.wikipedia.org/w/api.php?action=query&prop=extracts|info&inprop=url&exintro&explaintext&titles=${encodeURIComponent(h.title)}&format=json&origin=*`;
+    const page=Object.values(((await (await fetch(eUrl)).json()).query||{}).pages||{})[0]||{};
+    const extract=page.extract||"";
+    if(/hurricane|tropical (storm|cyclone|depression)|typhoon/i.test(extract)){
+      const sents=(extract.match(/[^.!?]+[.!?]+/g)||[extract]).slice(0,3).join(" ").trim();
+      return {title:page.title, url:page.fullurl, text:sents};
+    }
+  }
+  return null;
+}
+
+async function ask(query){
+  const q=(query||"").trim();
+  if(!q) return;
+  if(GREETING.test(q)){
+    setAnswer(`<span class="muted2">Hi! I answer questions about hurricanes. Try “Where did Florence make landfall?” or “How much damage did Helene cause?”</span>`);
+    return;
+  }
+  const named=tok(q).some(t=>STORM_NAMES.has(t));
+  if(!(HURR_KW.test(q)||named)){
+    setAnswer(`<span class="muted2">I only answer hurricane-related questions. Try naming a storm (e.g. Helene, Florence) or ask about landfall, category, or damage. If you were just saying hi — hello! 👋</span>`);
+    return;
+  }
+  // Corpus first for non-impact questions about the embedded storms (grounded, fast).
+  if(!IMPACT_KW.test(q)){
+    const c=corpusAnswer(q);
+    if(c){ setAnswer(`${c.text}<span class="src">source: NOAA Storm Events / NWS narrative (${c.doc})</span>`); return; }
+  }
+  // Hurricane-scoped Wikipedia for impact questions or storms not in the corpus.
+  setAnswer(`<span class="muted2">searching hurricane sources…</span>`);
+  try{
+    const w=await wikiLookup(q);
+    if(w){ setAnswer(`${w.text}<span class="src">source: <a href="${w.url}" target="_blank" rel="noopener" style="color:var(--c1)">Wikipedia — ${w.title}</a></span>`); return; }
+    const c=corpusAnswer(q);
+    if(c){ setAnswer(`${c.text}<span class="src">source: NOAA narrative (${c.doc})</span>`); return; }
+    setAnswer(`<span class="muted2">I couldn't find hurricane information for that. Try rephrasing, or name a specific storm (Helene, Florence, Matthew…).</span>`);
+  }catch(e){
+    const c=corpusAnswer(q);
+    if(c){ setAnswer(`${c.text}<span class="src">source: NOAA narrative (${c.doc})</span>`); return; }
+    setAnswer(`<span class="muted2">Live hurricane lookup isn't reachable from this browser right now. Florence, Dorian, and Irene are answered locally — try one of those.</span>`);
+  }
+}
+document.getElementById("askBtn").onclick=()=>{const v=document.getElementById("askInput").value.trim(); if(v) ask(v);};
+document.getElementById("askInput").addEventListener("keydown",e=>{if(e.key==="Enter"){const v=e.target.value.trim(); if(v) ask(v);}});
+document.getElementById("suggest").innerHTML=(DATA.qa||[]).map(x=>`<span>${x.q}</span>`).join("");
+document.querySelectorAll("#suggest span").forEach(el=>el.onclick=()=>{
+  document.getElementById("askInput").value=el.textContent; ask(el.textContent);
+});
+if((DATA.qa||[]).length) ask(DATA.qa[0].q);
+
+/* ---------- local conditions: NWS forecast + NOAA tides (browser fetch) ---------- */
+function hav(a,b,c,d){const R=6371,r=Math.PI/180;
+  const x=Math.sin((c-a)*r/2)**2+Math.cos(a*r)*Math.cos(c*r)*Math.sin((d-b)*r/2)**2;
+  return 2*R*Math.asin(Math.sqrt(x));}
+
+async function loadForecast(lat,lon){
+  const el=document.getElementById("localFc");
+  try{
+    const pt=await (await fetch(`https://api.weather.gov/points/${lat.toFixed(4)},${lon.toFixed(4)}`)).json();
+    const rel=pt.properties.relativeLocation?.properties||{};
+    document.getElementById("locTag").textContent=`${rel.city||lat.toFixed(2)}, ${rel.state||lon.toFixed(2)}`;
+    const per=(await (await fetch(pt.properties.forecast)).json()).properties.periods.slice(0,4);
+    el.innerHTML=`<h4>NWS forecast</h4>`+per.map(p=>
+      `<div class="row"><span><b>${p.name}</b> ${p.shortForecast}</span><b>${p.temperature}°${p.temperatureUnit}</b></div>`).join("");
+  }catch(e){ el.innerHTML=`<h4>NWS forecast</h4><span class="muted2">unavailable in this browser (${e})</span>`; }
+}
+
+let TIDE_STATIONS=null;
+async function loadTides(lat,lon){
+  const el=document.getElementById("localTide");
+  try{
+    if(!TIDE_STATIONS){
+      TIDE_STATIONS=(await (await fetch("https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations.json?type=tidepredictions")).json()).stations;
+    }
+    let best=null,bd=1e9;
+    for(const s of TIDE_STATIONS){const d=hav(lat,lon,+s.lat,+s.lng); if(d<bd){bd=d;best=s;}}
+    if(!best||bd>120){ el.innerHTML=`<h4>Tides</h4><span class="muted2">No tide station within range (inland location).</span>`; return; }
+    const url=`https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=storm-intel&datum=MLLW&time_zone=lst_ldt&units=english&interval=hilo&format=json&date=today&station=${best.id}`;
+    const preds=(await (await fetch(url)).json()).predictions||[];
+    el.innerHTML=`<h4>Tides · ${best.name}</h4>`+preds.map(p=>
+      `<div class="row"><span>${p.type==="H"?"High":"Low"} tide</span><b>${(+p.v).toFixed(1)} ft · ${p.t.split(" ")[1]}</b></div>`).join("")
+      || `<h4>Tides · ${best.name}</h4><span class="muted2">no predictions today</span>`;
+  }catch(e){ el.innerHTML=`<h4>Tides</h4><span class="muted2">unavailable in this browser (${e})</span>`; }
+}
+
+function loadLocal(lat,lon){ loadForecast(lat,lon); loadTides(lat,lon); }
+document.getElementById("useLoc").onclick=()=>{
+  if(!navigator.geolocation){ return; }
+  navigator.geolocation.getCurrentPosition(
+    p=>loadLocal(p.coords.latitude,p.coords.longitude),
+    ()=>{}, {timeout:8000});
+};
+async function geocodeAndLoad(qstr){
+  qstr=(qstr||"").trim(); if(!qstr) return;
+  const m=qstr.split(",");
+  if(m.length===2 && !isNaN(+m[0]) && !isNaN(+m[1])){ loadLocal(+m[0],+m[1]); return; }
+  document.getElementById("locTag").textContent="searching…";
+  try{
+    const r=await (await fetch(`https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${encodeURIComponent(qstr)}`)).json();
+    if(r[0]) loadLocal(+r[0].lat,+r[0].lon);
+    else document.getElementById("locTag").textContent="location not found";
+  }catch(e){ document.getElementById("locTag").textContent="lookup unavailable"; }
+}
+document.getElementById("setLoc").onclick=()=>geocodeAndLoad(document.getElementById("locInput").value);
+document.getElementById("locInput").addEventListener("keydown",e=>{if(e.key==="Enter")geocodeAndLoad(e.target.value);});
+loadLocal(DATA.defaultLoc.lat, DATA.defaultLoc.lon);
+
+select(DATA.storms[0].id);
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+You are grading whether an answer is supported by the provided context.
+Return a JSON object: {"grounded": true|false, "reason": "<short>"}.
+An answer is grounded only if every factual claim appears in or follows from
+the context.
+
+Context:
+{{ context }}
+
+Answer to grade:
+{{ answer }}

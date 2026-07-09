@@ -1,0 +1,13 @@
+# Experiment grids for the post-training / configuration sweeps.
+chunk_size:
+  param: chunk_size
+  values: [160, 320, 640]
+embedding_model:
+  param: embedding_backend
+  values: [local, sentence-transformers]
+retrieval_strategy:
+  param: rerank
+  values: [none, lexical, cross-encoder]
+prompt_template:
+  param: template
+  values: [rag_v1.jinja, rag_v2.jinja]

@@ -1,0 +1,23 @@
+[
+  {
+    "product_id": "AFD-MHX-1",
+    "product_type": "AFD",
+    "office": "MHX",
+    "issuance_time": "2018-09-13T15:30:00Z",
+    "text": "Area Forecast Discussion, NWS Newport/Morehead City NC. Hurricane Florence is expected to make landfall along the southeastern North Carolina coast as a Category 1 hurricane. Life-threatening storm surge and catastrophic inland flooding are the primary threats. Tropical storm conditions will spread into Carteret County tonight."
+  },
+  {
+    "product_id": "CWF-MHX-1",
+    "product_type": "CWF",
+    "office": "MHX",
+    "issuance_time": "2019-09-05T21:00:00Z",
+    "text": "Coastal Waters Forecast, NWS Newport/Morehead City NC. Hurricane Dorian will pass near the Outer Banks and make landfall near Cape Hatteras as a Category 1 hurricane. Seas building to 15 to 20 feet near the Gulf Stream. Mariners should remain in port."
+  },
+  {
+    "product_id": "AFD-MHX-2",
+    "product_type": "AFD",
+    "office": "MHX",
+    "issuance_time": "2011-08-26T18:00:00Z",
+    "text": "Area Forecast Discussion, NWS Newport/Morehead City NC. Hurricane Irene will move north across eastern North Carolina, with landfall expected near Cape Lookout as a Category 1 hurricane. Damaging winds and significant storm surge are anticipated across the Pamlico Sound."
+  }
+]

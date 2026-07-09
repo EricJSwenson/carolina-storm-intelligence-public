@@ -1,0 +1,13 @@
+# Models compared by the benchmark. Add OpenAI/Ollama entries once keys/hosts
+# are configured; the offline demo compares the two deterministic mocks.
+models:
+  - name: mock-grounded
+    backend: mock-grounded
+    description: Answers strictly from retrieved context.
+  - name: mock-naive
+    backend: mock-naive
+    description: Answers from an ungrounded prior; baseline to beat.
+  # - name: gpt-4o-mini
+  #   backend: openai
+  # - name: llama3.1
+  #   backend: ollama
