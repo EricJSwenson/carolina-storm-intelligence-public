@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-17T07:57:36.349983+00:00",
+  "fetched_at": "2026-07-17T13:12:47.152982+00:00",
   "active_storm_count": 1,
   "storms": [
     {
@@ -7,8 +7,8 @@
       "name": "Elida",
       "classification": "TS",
       "intensity_kt": 55,
-      "lat": 15.9,
-      "lon": -119.1,
+      "lat": 16.1,
+      "lon": -120.2,
       "movement": "280 10 kt",
       "pressure_mb": 994,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP5.shtml",
