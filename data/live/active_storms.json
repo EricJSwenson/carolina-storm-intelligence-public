@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-07-18T07:38:42.099693+00:00",
+  "fetched_at": "2026-07-18T12:58:31.458128+00:00",
   "active_storm_count": 1,
   "storms": [
     {
       "id": "ep052026",
       "name": "Elida",
       "classification": "TS",
-      "intensity_kt": 55,
-      "lat": 17.4,
-      "lon": -122.5,
-      "movement": "305 10 kt",
-      "pressure_mb": 992,
+      "intensity_kt": 60,
+      "lat": 18.0,
+      "lon": -122.8,
+      "movement": "315 9 kt",
+      "pressure_mb": 990,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP5.shtml",
       "track": []
     }
