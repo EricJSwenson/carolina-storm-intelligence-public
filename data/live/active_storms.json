@@ -1,16 +1,28 @@
 {
-  "fetched_at": "2026-07-19T13:01:18.657123+00:00",
-  "active_storm_count": 2,
+  "fetched_at": "2026-07-19T18:57:27.287145+00:00",
+  "active_storm_count": 3,
   "storms": [
+    {
+      "id": "al022026",
+      "name": "Two",
+      "classification": "TD",
+      "intensity_kt": 25,
+      "lat": 27.8,
+      "lon": -85.0,
+      "movement": "345 1 kt",
+      "pressure_mb": 1011,
+      "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT2.shtml",
+      "track": []
+    },
     {
       "id": "ep062026",
       "name": "Six-E",
       "classification": "TD",
       "intensity_kt": 30,
-      "lat": 12.1,
-      "lon": -110.6,
+      "lat": 12.4,
+      "lon": -111.7,
       "movement": "290 14 kt",
-      "pressure_mb": 1007,
+      "pressure_mb": 1006,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "track": []
     },
@@ -19,9 +31,9 @@
       "name": "Elida",
       "classification": "TS",
       "intensity_kt": 50,
-      "lat": 21.4,
-      "lon": -125.2,
-      "movement": "330 13 kt",
+      "lat": 22.2,
+      "lon": -125.3,
+      "movement": "340 9 kt",
       "pressure_mb": 996,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP5.shtml",
       "track": []
