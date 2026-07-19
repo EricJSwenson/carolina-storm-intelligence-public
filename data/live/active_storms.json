@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-19T08:04:35.645358+00:00",
+  "fetched_at": "2026-07-19T13:01:18.657123+00:00",
   "active_storm_count": 2,
   "storms": [
     {
@@ -7,10 +7,10 @@
       "name": "Six-E",
       "classification": "TD",
       "intensity_kt": 30,
-      "lat": 11.3,
-      "lon": -109.1,
-      "movement": "290 12 kt",
-      "pressure_mb": 1008,
+      "lat": 12.1,
+      "lon": -110.6,
+      "movement": "290 14 kt",
+      "pressure_mb": 1007,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "track": []
     },
@@ -18,11 +18,11 @@
       "id": "ep052026",
       "name": "Elida",
       "classification": "TS",
-      "intensity_kt": 55,
-      "lat": 20.6,
-      "lon": -124.8,
+      "intensity_kt": 50,
+      "lat": 21.4,
+      "lon": -125.2,
       "movement": "330 13 kt",
-      "pressure_mb": 993,
+      "pressure_mb": 996,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP5.shtml",
       "track": []
     }
