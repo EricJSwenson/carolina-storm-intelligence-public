@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-20T02:22:38.114413+00:00",
+  "fetched_at": "2026-07-20T08:46:10.199399+00:00",
   "active_storm_count": 3,
   "storms": [
     {
@@ -7,10 +7,10 @@
       "name": "Two",
       "classification": "TD",
       "intensity_kt": 25,
-      "lat": 27.7,
-      "lon": -85.0,
-      "movement": "None None kt",
-      "pressure_mb": 1008,
+      "lat": 28.4,
+      "lon": -85.3,
+      "movement": "335 3 kt",
+      "pressure_mb": 1007,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT2.shtml",
       "track": []
     },
@@ -18,11 +18,11 @@
       "id": "ep062026",
       "name": "Fausto",
       "classification": "TS",
-      "intensity_kt": 35,
-      "lat": 12.4,
-      "lon": -112.7,
-      "movement": "285 13 kt",
-      "pressure_mb": 1005,
+      "intensity_kt": 50,
+      "lat": 12.9,
+      "lon": -115.6,
+      "movement": "290 12 kt",
+      "pressure_mb": 996,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "track": []
     },
@@ -30,10 +30,10 @@
       "id": "ep052026",
       "name": "Elida",
       "classification": "TS",
-      "intensity_kt": 50,
-      "lat": 23.2,
-      "lon": -125.9,
-      "movement": "340 10 kt",
+      "intensity_kt": 45,
+      "lat": 24.1,
+      "lon": -126.8,
+      "movement": "335 12 kt",
       "pressure_mb": 996,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP5.shtml",
       "track": []
