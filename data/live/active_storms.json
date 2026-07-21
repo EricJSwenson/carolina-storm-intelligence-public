@@ -1,28 +1,28 @@
 {
-  "fetched_at": "2026-07-21T02:00:43.604105+00:00",
+  "fetched_at": "2026-07-21T08:13:22.441534+00:00",
   "active_storm_count": 2,
   "storms": [
     {
       "id": "al022026",
       "name": "Bertha",
       "classification": "TS",
-      "intensity_kt": 35,
-      "lat": 28.6,
-      "lon": -86.0,
-      "movement": "300 3 kt",
-      "pressure_mb": 1004,
+      "intensity_kt": 45,
+      "lat": 28.4,
+      "lon": -86.1,
+      "movement": "320 2 kt",
+      "pressure_mb": 998,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT2.shtml",
       "track": []
     },
     {
       "id": "ep062026",
       "name": "Fausto",
-      "classification": "TS",
-      "intensity_kt": 60,
-      "lat": 14.2,
-      "lon": -116.7,
-      "movement": "310 10 kt",
-      "pressure_mb": 994,
+      "classification": "HU",
+      "intensity_kt": 65,
+      "lat": 14.7,
+      "lon": -117.3,
+      "movement": "315 9 kt",
+      "pressure_mb": 988,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "track": []
     }
