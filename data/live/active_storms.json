@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-21T19:08:19.587932+00:00",
+  "fetched_at": "2026-07-22T01:59:16.299714+00:00",
   "active_storm_count": 2,
   "storms": [
     {
@@ -8,9 +8,9 @@
       "classification": "TS",
       "intensity_kt": 50,
       "lat": 29.3,
-      "lon": -86.8,
-      "movement": "310 5 kt",
-      "pressure_mb": 995,
+      "lon": -87.4,
+      "movement": "270 6 kt",
+      "pressure_mb": 997,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT2.shtml",
       "track": []
     },
@@ -19,10 +19,10 @@
       "name": "Fausto",
       "classification": "HU",
       "intensity_kt": 65,
-      "lat": 16.3,
-      "lon": -118.8,
-      "movement": "305 12 kt",
-      "pressure_mb": 986,
+      "lat": 16.6,
+      "lon": -119.9,
+      "movement": "295 12 kt",
+      "pressure_mb": 987,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "track": []
     }
