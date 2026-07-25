@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-25T13:08:17.698139+00:00",
+  "fetched_at": "2026-07-25T18:57:27.054172+00:00",
   "active_storm_count": 2,
   "storms": [
     {
@@ -7,9 +7,9 @@
       "name": "Fausto",
       "classification": "HU",
       "intensity_kt": 85,
-      "lat": 18.8,
-      "lon": -135.1,
-      "movement": "275 14 kt",
+      "lat": 19.1,
+      "lon": -136.5,
+      "movement": "280 14 kt",
       "pressure_mb": 971,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "track": []
@@ -18,11 +18,11 @@
       "id": "ep072026",
       "name": "Genevieve",
       "classification": "TS",
-      "intensity_kt": 45,
-      "lat": 10.0,
-      "lon": -103.6,
-      "movement": "295 13 kt",
-      "pressure_mb": 1000,
+      "intensity_kt": 50,
+      "lat": 10.8,
+      "lon": -104.3,
+      "movement": "300 15 kt",
+      "pressure_mb": 997,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "track": []
     }
