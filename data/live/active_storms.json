@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-08-01T13:03:23.305648+00:00",
+  "fetched_at": "2026-08-01T18:59:01.310847+00:00",
   "active_storm_count": 1,
   "storms": [
     {
       "id": "ep072026",
       "name": "Genevieve",
       "classification": "TS",
-      "intensity_kt": 45,
-      "lat": 22.6,
-      "lon": -132.5,
-      "movement": "290 14 kt",
-      "pressure_mb": 1000,
+      "intensity_kt": 40,
+      "lat": 23.0,
+      "lon": -133.7,
+      "movement": "285 14 kt",
+      "pressure_mb": 1003,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "track": []
     }
