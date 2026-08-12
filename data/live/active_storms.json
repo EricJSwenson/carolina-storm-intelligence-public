@@ -1,5 +1,30 @@
 {
-  "fetched_at": "2026-08-12T12:52:59.293719+00:00",
-  "active_storm_count": 0,
-  "storms": []
+  "fetched_at": "2026-08-12T18:53:05.346020+00:00",
+  "active_storm_count": 2,
+  "storms": [
+    {
+      "id": "al032026",
+      "name": "Cristobal",
+      "classification": "TS",
+      "intensity_kt": 40,
+      "lat": 36.7,
+      "lon": -43.0,
+      "movement": "90 25 kt",
+      "pressure_mb": 1008,
+      "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT3.shtml",
+      "track": []
+    },
+    {
+      "id": "cp012026",
+      "name": "One-C",
+      "classification": "PC",
+      "intensity_kt": 30,
+      "lat": 15.0,
+      "lon": -141.8,
+      "movement": "270 10 kt",
+      "pressure_mb": 1003,
+      "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
+      "track": []
+    }
+  ]
 }
