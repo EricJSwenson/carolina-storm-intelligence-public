@@ -1,17 +1,29 @@
 {
-  "fetched_at": "2026-08-13T01:19:46.811749+00:00",
-  "active_storm_count": 2,
+  "fetched_at": "2026-08-13T07:16:16.224996+00:00",
+  "active_storm_count": 3,
   "storms": [
     {
       "id": "al032026",
       "name": "Cristobal",
       "classification": "TS",
-      "intensity_kt": 40,
-      "lat": 37.2,
-      "lon": -41.0,
-      "movement": "90 21 kt",
-      "pressure_mb": 1008,
+      "intensity_kt": 35,
+      "lat": 37.7,
+      "lon": -39.5,
+      "movement": "75 16 kt",
+      "pressure_mb": 1010,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT3.shtml",
+      "track": []
+    },
+    {
+      "id": "ep082026",
+      "name": "Eight-E",
+      "classification": "TD",
+      "intensity_kt": 30,
+      "lat": 18.1,
+      "lon": -131.7,
+      "movement": "300 7 kt",
+      "pressure_mb": 1006,
+      "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP3.shtml",
       "track": []
     },
     {
@@ -19,10 +31,10 @@
       "name": "One-C",
       "classification": "PC",
       "intensity_kt": 35,
-      "lat": 14.7,
-      "lon": -142.6,
-      "movement": "260 9 kt",
-      "pressure_mb": 1003,
+      "lat": 14.8,
+      "lon": -143.5,
+      "movement": "280 9 kt",
+      "pressure_mb": 1002,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
       "track": []
     }
