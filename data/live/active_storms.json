@@ -1,28 +1,16 @@
 {
-  "fetched_at": "2026-08-13T18:53:02.229938+00:00",
-  "active_storm_count": 3,
+  "fetched_at": "2026-08-14T01:19:12.853962+00:00",
+  "active_storm_count": 2,
   "storms": [
-    {
-      "id": "al032026",
-      "name": "Cristobal",
-      "classification": "PTC",
-      "intensity_kt": 25,
-      "lat": 39.4,
-      "lon": -36.8,
-      "movement": "55 16 kt",
-      "pressure_mb": 1018,
-      "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT3.shtml",
-      "track": []
-    },
     {
       "id": "ep082026",
       "name": "Hernan",
       "classification": "TS",
       "intensity_kt": 40,
-      "lat": 18.0,
+      "lat": 17.3,
       "lon": -131.9,
-      "movement": "245 3 kt",
-      "pressure_mb": 1004,
+      "movement": "180 6 kt",
+      "pressure_mb": 1003,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP3.shtml",
       "track": []
     },
@@ -30,11 +18,11 @@
       "id": "cp012026",
       "name": "Lala",
       "classification": "TS",
-      "intensity_kt": 35,
-      "lat": 15.4,
-      "lon": -145.8,
-      "movement": "285 10 kt",
-      "pressure_mb": 1001,
+      "intensity_kt": 45,
+      "lat": 15.6,
+      "lon": -146.7,
+      "movement": "290 10 kt",
+      "pressure_mb": 999,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
       "track": []
     }
