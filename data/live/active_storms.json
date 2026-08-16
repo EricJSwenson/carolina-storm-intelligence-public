@@ -1,27 +1,15 @@
 {
-  "fetched_at": "2026-08-16T00:53:12.704348+00:00",
-  "active_storm_count": 2,
+  "fetched_at": "2026-08-16T06:27:05.863703+00:00",
+  "active_storm_count": 1,
   "storms": [
-    {
-      "id": "ep082026",
-      "name": "Hernan",
-      "classification": "PTC",
-      "intensity_kt": 25,
-      "lat": 15.8,
-      "lon": -135.9,
-      "movement": "270 12 kt",
-      "pressure_mb": 1009,
-      "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP3.shtml",
-      "track": []
-    },
     {
       "id": "cp012026",
       "name": "Lala",
       "classification": "HU",
       "intensity_kt": 65,
-      "lat": 18.3,
-      "lon": -155.7,
-      "movement": "315 8 kt",
+      "lat": 19.1,
+      "lon": -156.5,
+      "movement": "310 10 kt",
       "pressure_mb": 988,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
       "track": []
