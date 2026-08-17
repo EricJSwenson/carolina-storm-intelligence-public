@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-17T12:29:04.574007+00:00",
+  "fetched_at": "2026-08-17T18:28:28.803524+00:00",
   "active_storm_count": 1,
   "storms": [
     {
@@ -7,9 +7,9 @@
       "name": "Lala",
       "classification": "TS",
       "intensity_kt": 50,
-      "lat": 20.7,
-      "lon": -162.6,
-      "movement": "270 13 kt",
+      "lat": 20.4,
+      "lon": -163.4,
+      "movement": "265 12 kt",
       "pressure_mb": 997,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
       "track": []
