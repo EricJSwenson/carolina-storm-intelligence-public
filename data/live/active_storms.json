@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-21T00:53:49.813839+00:00",
+  "fetched_at": "2026-08-21T06:33:35.588502+00:00",
   "active_storm_count": 2,
   "storms": [
     {
@@ -7,10 +7,10 @@
       "name": "Lala",
       "classification": "HU",
       "intensity_kt": 80,
-      "lat": 25.2,
-      "lon": -172.4,
-      "movement": "355 10 kt",
-      "pressure_mb": 973,
+      "lat": 26.1,
+      "lon": -172.0,
+      "movement": "15 10 kt",
+      "pressure_mb": 974,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
       "track": []
     },
@@ -19,9 +19,9 @@
       "name": "Two-C",
       "classification": "TD",
       "intensity_kt": 30,
-      "lat": 12.5,
-      "lon": -143.8,
-      "movement": "300 15 kt",
+      "lat": 12.9,
+      "lon": -145.0,
+      "movement": "290 14 kt",
       "pressure_mb": 1006,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP3.shtml",
       "track": []
