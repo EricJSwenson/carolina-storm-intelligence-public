@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-08-22T18:18:42.276459+00:00",
+  "fetched_at": "2026-08-23T00:54:07.464564+00:00",
   "active_storm_count": 2,
   "storms": [
     {
       "id": "cp012026",
       "name": "Lala",
       "classification": "HU",
-      "intensity_kt": 70,
-      "lat": 30.5,
-      "lon": -172.4,
-      "movement": "310 10 kt",
-      "pressure_mb": 979,
+      "intensity_kt": 65,
+      "lat": 31.0,
+      "lon": -172.7,
+      "movement": "305 7 kt",
+      "pressure_mb": 981,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
       "track": []
     },
@@ -19,10 +19,10 @@
       "name": "Moke",
       "classification": "TS",
       "intensity_kt": 45,
-      "lat": 14.8,
-      "lon": -150.2,
+      "lat": 14.9,
+      "lon": -151.1,
       "movement": "290 12 kt",
-      "pressure_mb": 994,
+      "pressure_mb": 996,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP3.shtml",
       "track": []
     }
