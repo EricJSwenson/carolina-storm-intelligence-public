@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-25T00:52:17.146117+00:00",
+  "fetched_at": "2026-08-25T06:33:38.686394+00:00",
   "active_storm_count": 4,
   "storms": [
     {
@@ -7,9 +7,9 @@
       "name": "Iselle",
       "classification": "TS",
       "intensity_kt": 60,
-      "lat": 19.2,
-      "lon": -118.0,
-      "movement": "310 13 kt",
+      "lat": 20.1,
+      "lon": -118.6,
+      "movement": "325 15 kt",
       "pressure_mb": 988,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP4.shtml",
       "track": []
@@ -19,9 +19,9 @@
       "name": "Ten-E",
       "classification": "TD",
       "intensity_kt": 30,
-      "lat": 13.5,
-      "lon": -120.8,
-      "movement": "10 8 kt",
+      "lat": 14.5,
+      "lon": -120.3,
+      "movement": "30 9 kt",
       "pressure_mb": 1006,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP5.shtml",
       "track": []
@@ -30,11 +30,11 @@
       "id": "cp012026",
       "name": "Lala",
       "classification": "TS",
-      "intensity_kt": 55,
-      "lat": 33.7,
-      "lon": -175.4,
-      "movement": "320 5 kt",
-      "pressure_mb": 988,
+      "intensity_kt": 50,
+      "lat": 34.3,
+      "lon": -175.6,
+      "movement": "320 6 kt",
+      "pressure_mb": 992,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
       "track": []
     },
@@ -43,9 +43,9 @@
       "name": "Moke",
       "classification": "TD",
       "intensity_kt": 30,
-      "lat": 15.7,
-      "lon": -161.8,
-      "movement": "280 16 kt",
+      "lat": 16.0,
+      "lon": -163.0,
+      "movement": "280 14 kt",
       "pressure_mb": 1005,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP3.shtml",
       "track": []
