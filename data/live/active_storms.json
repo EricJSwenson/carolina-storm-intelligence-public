@@ -1,17 +1,41 @@
 {
-  "fetched_at": "2026-08-27T06:34:04.104896+00:00",
-  "active_storm_count": 2,
+  "fetched_at": "2026-08-27T21:32:56.873052+00:00",
+  "active_storm_count": 4,
   "storms": [
     {
-      "id": "ep092026",
-      "name": "Iselle",
-      "classification": "PTC",
-      "intensity_kt": 30,
-      "lat": 23.0,
-      "lon": -125.9,
-      "movement": "300 9 kt",
-      "pressure_mb": 1002,
-      "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP4.shtml",
+      "id": "al042026",
+      "name": "Dolly",
+      "classification": "TS",
+      "intensity_kt": 35,
+      "lat": 13.7,
+      "lon": -40.7,
+      "movement": "275 24 kt",
+      "pressure_mb": 1007,
+      "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT4.shtml",
+      "track": []
+    },
+    {
+      "id": "ep112026",
+      "name": "Karina",
+      "classification": "TS",
+      "intensity_kt": 40,
+      "lat": 11.1,
+      "lon": -111.9,
+      "movement": "295 13 kt",
+      "pressure_mb": 1001,
+      "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
+      "track": []
+    },
+    {
+      "id": "ep122026",
+      "name": "Lowell",
+      "classification": "TS",
+      "intensity_kt": 35,
+      "lat": 11.3,
+      "lon": -133.8,
+      "movement": "65 5 kt",
+      "pressure_mb": 1006,
+      "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "track": []
     },
     {
@@ -19,10 +43,10 @@
       "name": "Lala",
       "classification": "TS",
       "intensity_kt": 40,
-      "lat": 36.4,
-      "lon": -178.5,
-      "movement": "325 5 kt",
-      "pressure_mb": 999,
+      "lat": 37.5,
+      "lon": -178.9,
+      "movement": "335 5 kt",
+      "pressure_mb": 1000,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
       "track": []
     }
