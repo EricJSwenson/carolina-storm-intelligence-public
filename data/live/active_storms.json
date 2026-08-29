@@ -1,28 +1,16 @@
 {
-  "fetched_at": "2026-08-28T21:38:17.245502+00:00",
-  "active_storm_count": 3,
+  "fetched_at": "2026-08-29T05:04:57.052929+00:00",
+  "active_storm_count": 2,
   "storms": [
-    {
-      "id": "al042026",
-      "name": "Dolly",
-      "classification": "PTC",
-      "intensity_kt": 35,
-      "lat": 15.0,
-      "lon": -46.9,
-      "movement": "280 25 kt",
-      "pressure_mb": 1008,
-      "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT4.shtml",
-      "track": []
-    },
     {
       "id": "ep112026",
       "name": "Karina",
       "classification": "TS",
       "intensity_kt": 55,
-      "lat": 13.7,
-      "lon": -115.5,
-      "movement": "315 9 kt",
-      "pressure_mb": 990,
+      "lat": 14.2,
+      "lon": -116.3,
+      "movement": "310 12 kt",
+      "pressure_mb": 988,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "track": []
     },
@@ -32,8 +20,8 @@
       "classification": "TS",
       "intensity_kt": 40,
       "lat": 12.5,
-      "lon": -133.4,
-      "movement": "305 5 kt",
+      "lon": -134.2,
+      "movement": "275 7 kt",
       "pressure_mb": 1003,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "track": []
