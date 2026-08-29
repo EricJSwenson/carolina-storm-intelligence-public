@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-29T12:04:38.964814+00:00",
+  "fetched_at": "2026-08-29T20:15:30.145765+00:00",
   "active_storm_count": 2,
   "storms": [
     {
@@ -7,8 +7,8 @@
       "name": "Karina",
       "classification": "TS",
       "intensity_kt": 55,
-      "lat": 14.7,
-      "lon": -117.0,
+      "lat": 15.6,
+      "lon": -117.6,
       "movement": "310 12 kt",
       "pressure_mb": 989,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
@@ -19,8 +19,8 @@
       "name": "Lowell",
       "classification": "TS",
       "intensity_kt": 40,
-      "lat": 12.6,
-      "lon": -134.8,
+      "lat": 12.8,
+      "lon": -135.7,
       "movement": "280 8 kt",
       "pressure_mb": 1003,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
