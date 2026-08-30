@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-08-30T02:55:21.798604+00:00",
+  "fetched_at": "2026-08-30T11:00:10.892867+00:00",
   "active_storm_count": 2,
   "storms": [
     {
       "id": "ep112026",
       "name": "Karina",
-      "classification": "TS",
-      "intensity_kt": 60,
-      "lat": 16.4,
-      "lon": -118.8,
-      "movement": "295 12 kt",
-      "pressure_mb": 987,
+      "classification": "HU",
+      "intensity_kt": 70,
+      "lat": 17.3,
+      "lon": -121.1,
+      "movement": "295 15 kt",
+      "pressure_mb": 980,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "track": []
     },
@@ -20,9 +20,9 @@
       "classification": "TS",
       "intensity_kt": 45,
       "lat": 13.2,
-      "lon": -138.1,
-      "movement": "270 9 kt",
-      "pressure_mb": 1001,
+      "lon": -139.1,
+      "movement": "270 10 kt",
+      "pressure_mb": 1000,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "track": []
     }
