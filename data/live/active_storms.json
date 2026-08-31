@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-08-31T02:48:45.527032+00:00",
+  "fetched_at": "2026-08-31T12:21:24.973839+00:00",
   "active_storm_count": 2,
   "storms": [
     {
       "id": "ep112026",
       "name": "Karina",
       "classification": "HU",
-      "intensity_kt": 110,
+      "intensity_kt": 125,
       "lat": 17.2,
-      "lon": -123.4,
-      "movement": "270 9 kt",
-      "pressure_mb": 955,
+      "lon": -124.4,
+      "movement": "275 9 kt",
+      "pressure_mb": 942,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "track": []
     },
@@ -18,11 +18,11 @@
       "id": "ep122026",
       "name": "Lowell",
       "classification": "TS",
-      "intensity_kt": 45,
-      "lat": 13.2,
-      "lon": -143.3,
+      "intensity_kt": 50,
+      "lat": 13.0,
+      "lon": -144.2,
       "movement": "270 12 kt",
-      "pressure_mb": 999,
+      "pressure_mb": 997,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP4.shtml",
       "track": []
     }
