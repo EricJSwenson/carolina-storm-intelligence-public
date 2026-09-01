@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-09-01T15:52:51.395624+00:00",
+  "fetched_at": "2026-09-01T20:22:30.161211+00:00",
   "active_storm_count": 4,
   "storms": [
     {
       "id": "al052026",
       "name": "Edouard",
       "classification": "TS",
-      "intensity_kt": 45,
-      "lat": 29.4,
-      "lon": -93.3,
+      "intensity_kt": 50,
+      "lat": 29.8,
+      "lon": -93.9,
       "movement": "305 8 kt",
-      "pressure_mb": 1000,
+      "pressure_mb": 996,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT5.shtml",
       "track": []
     },
