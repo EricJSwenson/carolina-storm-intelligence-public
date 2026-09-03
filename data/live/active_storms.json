@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-03T10:29:45.542602+00:00",
+  "fetched_at": "2026-09-03T15:35:15.323839+00:00",
   "active_storm_count": 4,
   "storms": [
     {
@@ -18,11 +18,11 @@
       "id": "ep112026",
       "name": "Karina",
       "classification": "HU",
-      "intensity_kt": 105,
-      "lat": 19.6,
-      "lon": -135.7,
-      "movement": "285 12 kt",
-      "pressure_mb": 957,
+      "intensity_kt": 100,
+      "lat": 19.8,
+      "lon": -136.7,
+      "movement": "280 12 kt",
+      "pressure_mb": 961,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "track": []
     },
@@ -30,11 +30,11 @@
       "id": "ep132026",
       "name": "Marie",
       "classification": "HU",
-      "intensity_kt": 75,
-      "lat": 18.9,
-      "lon": -113.9,
-      "movement": "300 10 kt",
-      "pressure_mb": 981,
+      "intensity_kt": 80,
+      "lat": 19.2,
+      "lon": -114.9,
+      "movement": "290 10 kt",
+      "pressure_mb": 976,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP3.shtml",
       "track": []
     },
@@ -42,11 +42,11 @@
       "id": "ep122026",
       "name": "Lowell",
       "classification": "HU",
-      "intensity_kt": 125,
-      "lat": 13.3,
-      "lon": -156.3,
+      "intensity_kt": 120,
+      "lat": 13.5,
+      "lon": -157.2,
       "movement": "270 10 kt",
-      "pressure_mb": 941,
+      "pressure_mb": 945,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP4.shtml",
       "track": []
     }
