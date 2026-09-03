@@ -1,19 +1,7 @@
 {
-  "fetched_at": "2026-09-03T15:35:15.323839+00:00",
-  "active_storm_count": 4,
+  "fetched_at": "2026-09-03T20:21:56.221801+00:00",
+  "active_storm_count": 3,
   "storms": [
-    {
-      "id": "al052026",
-      "name": "Edouard",
-      "classification": "PTC",
-      "intensity_kt": 20,
-      "lat": 32.5,
-      "lon": -96.5,
-      "movement": "300 5 kt",
-      "pressure_mb": 1012,
-      "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT5.shtml",
-      "track": []
-    },
     {
       "id": "ep112026",
       "name": "Karina",
