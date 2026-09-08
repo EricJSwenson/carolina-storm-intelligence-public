@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-09-08T10:23:47.418556+00:00",
+  "fetched_at": "2026-09-08T15:47:15.223233+00:00",
   "active_storm_count": 2,
   "storms": [
     {
       "id": "ep132026",
       "name": "Marie",
-      "classification": "TS",
-      "intensity_kt": 40,
-      "lat": 25.5,
-      "lon": -126.6,
-      "movement": "300 8 kt",
-      "pressure_mb": 996,
+      "classification": "PTC",
+      "intensity_kt": 35,
+      "lat": 25.8,
+      "lon": -127.4,
+      "movement": "300 9 kt",
+      "pressure_mb": 1000,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP3.shtml",
       "track": []
     },
@@ -18,11 +18,11 @@
       "id": "ep122026",
       "name": "Lowell",
       "classification": "HU",
-      "intensity_kt": 95,
-      "lat": 21.9,
-      "lon": -160.8,
-      "movement": "20 18 kt",
-      "pressure_mb": 963,
+      "intensity_kt": 80,
+      "lat": 23.7,
+      "lon": -160.7,
+      "movement": "360 18 kt",
+      "pressure_mb": 967,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP4.shtml",
       "track": []
     }
