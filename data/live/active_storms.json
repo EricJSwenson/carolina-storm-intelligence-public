@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-09-09T10:33:09.905141+00:00",
+  "fetched_at": "2026-09-09T15:43:15.827406+00:00",
   "active_storm_count": 1,
   "storms": [
     {
       "id": "ep122026",
       "name": "Lowell",
       "classification": "TS",
-      "intensity_kt": 55,
-      "lat": 27.3,
-      "lon": -161.5,
-      "movement": "350 14 kt",
-      "pressure_mb": 981,
+      "intensity_kt": 50,
+      "lat": 28.1,
+      "lon": -162.3,
+      "movement": "330 13 kt",
+      "pressure_mb": 985,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP4.shtml",
       "track": []
     }
