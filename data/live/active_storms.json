@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-09-10T02:30:28.891327+00:00",
+  "fetched_at": "2026-09-10T10:22:04.587605+00:00",
   "active_storm_count": 2,
   "storms": [
     {
       "id": "ep142026",
-      "name": "Fourteen-E",
-      "classification": "TD",
-      "intensity_kt": 30,
-      "lat": 15.7,
-      "lon": -115.2,
-      "movement": "285 9 kt",
-      "pressure_mb": 1006,
+      "name": "Norbert",
+      "classification": "TS",
+      "intensity_kt": 35,
+      "lat": 16.4,
+      "lon": -117.9,
+      "movement": "280 13 kt",
+      "pressure_mb": 1004,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP4.shtml",
       "track": []
     },
@@ -18,11 +18,11 @@
       "id": "ep122026",
       "name": "Lowell",
       "classification": "TS",
-      "intensity_kt": 50,
-      "lat": 28.9,
-      "lon": -163.7,
-      "movement": "310 14 kt",
-      "pressure_mb": 987,
+      "intensity_kt": 55,
+      "lat": 29.2,
+      "lon": -166.2,
+      "movement": "280 13 kt",
+      "pressure_mb": 993,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP4.shtml",
       "track": []
     }
