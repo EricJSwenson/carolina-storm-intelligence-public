@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-09-12T19:58:35.485279+00:00",
+  "fetched_at": "2026-09-13T02:31:33.079559+00:00",
   "active_storm_count": 1,
   "storms": [
     {
       "id": "ep142026",
       "name": "Norbert",
       "classification": "TS",
-      "intensity_kt": 50,
-      "lat": 17.3,
-      "lon": -128.3,
-      "movement": "285 10 kt",
-      "pressure_mb": 999,
+      "intensity_kt": 45,
+      "lat": 17.6,
+      "lon": -129.6,
+      "movement": "285 12 kt",
+      "pressure_mb": 1000,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP4.shtml",
       "track": []
     }
