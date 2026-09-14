@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-14T17:22:12.925925+00:00",
+  "fetched_at": "2026-09-14T21:15:38.324215+00:00",
   "active_storm_count": 2,
   "storms": [
     {
@@ -7,8 +7,8 @@
       "name": "Norbert",
       "classification": "TS",
       "intensity_kt": 35,
-      "lat": 19.4,
-      "lon": -137.8,
+      "lat": 19.7,
+      "lon": -139.2,
       "movement": "280 15 kt",
       "pressure_mb": 1005,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP4.shtml",
@@ -19,9 +19,9 @@
       "name": "Fifteen-E",
       "classification": "TD",
       "intensity_kt": 30,
-      "lat": 16.3,
-      "lon": -119.7,
-      "movement": "240 9 kt",
+      "lat": 16.9,
+      "lon": -120.5,
+      "movement": "280 9 kt",
       "pressure_mb": 1006,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP5.shtml",
       "track": []
