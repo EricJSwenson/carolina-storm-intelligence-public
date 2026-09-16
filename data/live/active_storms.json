@@ -1,29 +1,17 @@
 {
-  "fetched_at": "2026-09-15T20:43:33.468711+00:00",
-  "active_storm_count": 2,
+  "fetched_at": "2026-09-16T02:45:32.573183+00:00",
+  "active_storm_count": 1,
   "storms": [
     {
       "id": "ep152026",
       "name": "Fifteen-E",
-      "classification": "TD",
+      "classification": "PTC",
       "intensity_kt": 25,
-      "lat": 15.7,
-      "lon": -125.0,
+      "lat": 15.5,
+      "lon": -125.8,
       "movement": "255 12 kt",
       "pressure_mb": 1006,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP5.shtml",
-      "track": []
-    },
-    {
-      "id": "ep142026",
-      "name": "Norbert",
-      "classification": "PTC",
-      "intensity_kt": 30,
-      "lat": 20.5,
-      "lon": -143.1,
-      "movement": "280 13 kt",
-      "pressure_mb": 1007,
-      "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP1.shtml",
       "track": []
     }
   ]
