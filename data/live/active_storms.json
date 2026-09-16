@@ -1,18 +1,5 @@
 {
-  "fetched_at": "2026-09-16T10:37:08.732479+00:00",
-  "active_storm_count": 1,
-  "storms": [
-    {
-      "id": "ep152026",
-      "name": "Fifteen-E",
-      "classification": "PTC",
-      "intensity_kt": 25,
-      "lat": 15.5,
-      "lon": -125.8,
-      "movement": "255 12 kt",
-      "pressure_mb": 1006,
-      "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP5.shtml",
-      "track": []
-    }
-  ]
+  "fetched_at": "2026-09-16T15:53:42.139751+00:00",
+  "active_storm_count": 0,
+  "storms": []
 }
