@@ -1,15 +1,15 @@
 {
-  "fetched_at": "2026-09-20T10:23:44.988143+00:00",
+  "fetched_at": "2026-09-20T15:13:09.902837+00:00",
   "active_storm_count": 2,
   "storms": [
     {
       "id": "al062026",
       "name": "Fay",
       "classification": "TS",
-      "intensity_kt": 40,
-      "lat": 33.7,
-      "lon": -33.1,
-      "movement": "20 5 kt",
+      "intensity_kt": 50,
+      "lat": 34.1,
+      "lon": -33.0,
+      "movement": "40 3 kt",
       "pressure_mb": 1004,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT1.shtml",
       "track": []
@@ -18,11 +18,11 @@
       "id": "ep162026",
       "name": "Odalys",
       "classification": "TS",
-      "intensity_kt": 35,
-      "lat": 11.4,
-      "lon": -124.5,
-      "movement": "305 8 kt",
-      "pressure_mb": 1005,
+      "intensity_kt": 40,
+      "lat": 11.1,
+      "lon": -125.5,
+      "movement": "285 9 kt",
+      "pressure_mb": 1003,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "track": []
     }
