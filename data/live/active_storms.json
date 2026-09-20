@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-19T19:51:31.483474+00:00",
+  "fetched_at": "2026-09-20T02:47:07.088335+00:00",
   "active_storm_count": 1,
   "storms": [
     {
@@ -7,10 +7,10 @@
       "name": "Six",
       "classification": "TD",
       "intensity_kt": 30,
-      "lat": 32.6,
-      "lon": -33.6,
-      "movement": "360 2 kt",
-      "pressure_mb": 1009,
+      "lat": 33.3,
+      "lon": -33.2,
+      "movement": "20 5 kt",
+      "pressure_mb": 1007,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT1.shtml",
       "track": []
     }
