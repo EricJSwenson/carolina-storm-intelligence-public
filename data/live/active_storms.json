@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-09-21T21:31:38.930260+00:00",
+  "fetched_at": "2026-09-22T02:45:08.081401+00:00",
   "active_storm_count": 3,
   "storms": [
     {
       "id": "al062026",
       "name": "Fay",
       "classification": "TS",
-      "intensity_kt": 40,
-      "lat": 33.1,
-      "lon": -32.2,
-      "movement": "210 3 kt",
-      "pressure_mb": 1004,
+      "intensity_kt": 35,
+      "lat": 32.3,
+      "lon": -33.1,
+      "movement": "215 8 kt",
+      "pressure_mb": 1008,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT1.shtml",
       "track": []
     },
@@ -30,11 +30,11 @@
       "id": "ep172026",
       "name": "Polo",
       "classification": "HU",
-      "intensity_kt": 75,
-      "lat": 15.1,
-      "lon": -102.7,
-      "movement": "110 6 kt",
-      "pressure_mb": 974,
+      "intensity_kt": 80,
+      "lat": 15.2,
+      "lon": -102.4,
+      "movement": "90 6 kt",
+      "pressure_mb": 971,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "track": []
     }
