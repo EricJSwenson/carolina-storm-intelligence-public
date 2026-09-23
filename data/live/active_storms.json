@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-23T10:34:33.983398+00:00",
+  "fetched_at": "2026-09-23T15:53:47.753934+00:00",
   "active_storm_count": 3,
   "storms": [
     {
@@ -7,9 +7,9 @@
       "name": "Odalys",
       "classification": "HU",
       "intensity_kt": 65,
-      "lat": 15.9,
-      "lon": -128.4,
-      "movement": "65 9 kt",
+      "lat": 16.0,
+      "lon": -127.9,
+      "movement": "70 8 kt",
       "pressure_mb": 989,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "track": []
@@ -18,11 +18,11 @@
       "id": "ep172026",
       "name": "Polo",
       "classification": "HU",
-      "intensity_kt": 135,
-      "lat": 15.0,
-      "lon": -101.4,
-      "movement": "360 2 kt",
-      "pressure_mb": 918,
+      "intensity_kt": 130,
+      "lat": 15.4,
+      "lon": -101.8,
+      "movement": "325 5 kt",
+      "pressure_mb": 927,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "track": []
     },
@@ -31,10 +31,10 @@
       "name": "Fifteen-E",
       "classification": "TD",
       "intensity_kt": 30,
-      "lat": 14.0,
-      "lon": -153.7,
-      "movement": "290 12 kt",
-      "pressure_mb": 1006,
+      "lat": 14.5,
+      "lon": -154.4,
+      "movement": "290 6 kt",
+      "pressure_mb": 1004,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
       "track": []
     }
