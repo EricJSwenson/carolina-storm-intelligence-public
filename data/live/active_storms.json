@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-24T16:16:21.359598+00:00",
+  "fetched_at": "2026-09-24T21:00:06.447398+00:00",
   "active_storm_count": 4,
   "storms": [
     {
@@ -8,7 +8,7 @@
       "classification": "TS",
       "intensity_kt": 45,
       "lat": 29.8,
-      "lon": -41.2,
+      "lon": -41.8,
       "movement": "270 6 kt",
       "pressure_mb": 1005,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT1.shtml",
@@ -19,9 +19,9 @@
       "name": "Odalys",
       "classification": "HU",
       "intensity_kt": 80,
-      "lat": 16.4,
-      "lon": -125.5,
-      "movement": "60 7 kt",
+      "lat": 16.8,
+      "lon": -124.9,
+      "movement": "60 8 kt",
       "pressure_mb": 976,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "track": []
@@ -30,11 +30,11 @@
       "id": "ep172026",
       "name": "Polo",
       "classification": "HU",
-      "intensity_kt": 135,
-      "lat": 16.8,
-      "lon": -104.4,
-      "movement": "295 10 kt",
-      "pressure_mb": 928,
+      "intensity_kt": 130,
+      "lat": 17.1,
+      "lon": -105.5,
+      "movement": "285 10 kt",
+      "pressure_mb": 935,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "track": []
     },
@@ -42,11 +42,11 @@
       "id": "ep152026",
       "name": "Nolo",
       "classification": "TS",
-      "intensity_kt": 50,
+      "intensity_kt": 60,
       "lat": 14.9,
-      "lon": -156.2,
-      "movement": "None None kt",
-      "pressure_mb": 997,
+      "lon": -156.1,
+      "movement": "360 2 kt",
+      "pressure_mb": 992,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
       "track": []
     }
