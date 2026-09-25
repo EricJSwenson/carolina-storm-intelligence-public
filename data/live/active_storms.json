@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-09-24T21:00:06.447398+00:00",
-  "active_storm_count": 4,
+  "fetched_at": "2026-09-25T02:52:27.770399+00:00",
+  "active_storm_count": 5,
   "storms": [
     {
       "id": "al062026",
@@ -8,10 +8,22 @@
       "classification": "TS",
       "intensity_kt": 45,
       "lat": 29.8,
-      "lon": -41.8,
+      "lon": -42.3,
       "movement": "270 6 kt",
       "pressure_mb": 1005,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT1.shtml",
+      "track": []
+    },
+    {
+      "id": "al072026",
+      "name": "Gonzalo",
+      "classification": "TS",
+      "intensity_kt": 40,
+      "lat": 13.2,
+      "lon": -22.1,
+      "movement": "330 8 kt",
+      "pressure_mb": 1004,
+      "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT2.shtml",
       "track": []
     },
     {
@@ -32,8 +44,8 @@
       "classification": "HU",
       "intensity_kt": 130,
       "lat": 17.1,
-      "lon": -105.5,
-      "movement": "285 10 kt",
+      "lon": -106.5,
+      "movement": "280 12 kt",
       "pressure_mb": 935,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "track": []
@@ -41,12 +53,12 @@
     {
       "id": "ep152026",
       "name": "Nolo",
-      "classification": "TS",
-      "intensity_kt": 60,
-      "lat": 14.9,
-      "lon": -156.1,
-      "movement": "360 2 kt",
-      "pressure_mb": 992,
+      "classification": "HU",
+      "intensity_kt": 65,
+      "lat": 15.1,
+      "lon": -155.9,
+      "movement": "20 5 kt",
+      "pressure_mb": 984,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
       "track": []
     }
