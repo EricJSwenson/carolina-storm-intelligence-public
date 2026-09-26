@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-26T15:30:26.002020+00:00",
+  "fetched_at": "2026-09-26T20:29:00.088079+00:00",
   "active_storm_count": 5,
   "storms": [
     {
@@ -42,11 +42,11 @@
       "id": "ep172026",
       "name": "Polo",
       "classification": "HU",
-      "intensity_kt": 135,
-      "lat": 17.9,
-      "lon": -111.7,
-      "movement": "295 9 kt",
-      "pressure_mb": 928,
+      "intensity_kt": 125,
+      "lat": 18.3,
+      "lon": -112.2,
+      "movement": "300 9 kt",
+      "pressure_mb": 936,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "track": []
     },
@@ -54,11 +54,11 @@
       "id": "ep152026",
       "name": "Nolo",
       "classification": "HU",
-      "intensity_kt": 90,
-      "lat": 16.9,
-      "lon": -155.5,
-      "movement": "None None kt",
-      "pressure_mb": 976,
+      "intensity_kt": 85,
+      "lat": 16.8,
+      "lon": -155.7,
+      "movement": "270 3 kt",
+      "pressure_mb": 977,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
       "track": []
     }
