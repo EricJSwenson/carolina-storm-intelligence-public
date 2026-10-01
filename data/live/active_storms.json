@@ -1,27 +1,27 @@
 {
-  "fetched_at": "2026-10-01T12:11:56.544841+00:00",
+  "fetched_at": "2026-10-01T22:12:21.064438+00:00",
   "active_storm_count": 3,
   "storms": [
     {
       "id": "ep182026",
       "name": "Rachel",
       "classification": "HU",
-      "intensity_kt": 85,
+      "intensity_kt": 105,
       "lat": 19.4,
-      "lon": -109.3,
-      "movement": "300 6 kt",
-      "pressure_mb": 972,
+      "lon": -109.5,
+      "movement": "280 3 kt",
+      "pressure_mb": 950,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP3.shtml",
       "track": []
     },
     {
       "id": "ep192026",
       "name": "Nineteen-E",
-      "classification": "TD",
+      "classification": "PTC",
       "intensity_kt": 25,
-      "lat": 15.3,
-      "lon": -124.6,
-      "movement": "90 14 kt",
+      "lat": 15.0,
+      "lon": -123.0,
+      "movement": "90 8 kt",
       "pressure_mb": 1006,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP4.shtml",
       "track": []
@@ -30,11 +30,11 @@
       "id": "ep152026",
       "name": "Nolo",
       "classification": "TS",
-      "intensity_kt": 45,
-      "lat": 21.8,
-      "lon": -165.3,
-      "movement": "285 3 kt",
-      "pressure_mb": 994,
+      "intensity_kt": 50,
+      "lat": 22.3,
+      "lon": -165.5,
+      "movement": "315 6 kt",
+      "pressure_mb": 993,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
       "track": []
     }
