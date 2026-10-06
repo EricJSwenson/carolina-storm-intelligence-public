@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-10-06T04:13:54.136694+00:00",
+  "fetched_at": "2026-10-06T12:33:03.780521+00:00",
   "active_storm_count": 1,
   "storms": [
     {
       "id": "ep182026",
       "name": "Rachel",
       "classification": "HU",
-      "intensity_kt": 80,
-      "lat": 20.4,
-      "lon": -117.9,
-      "movement": "270 9 kt",
-      "pressure_mb": 973,
+      "intensity_kt": 75,
+      "lat": 20.3,
+      "lon": -118.6,
+      "movement": "270 8 kt",
+      "pressure_mb": 976,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP3.shtml",
       "track": []
     }
