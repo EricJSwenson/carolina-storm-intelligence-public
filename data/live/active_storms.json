@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-10-07T03:40:48.241049+00:00",
+  "fetched_at": "2026-10-07T12:26:14.632859+00:00",
   "active_storm_count": 2,
   "storms": [
     {
       "id": "al092026",
-      "name": "Nine",
-      "classification": "TD",
-      "intensity_kt": 30,
-      "lat": 22.1,
-      "lon": -95.0,
-      "movement": "80 5 kt",
-      "pressure_mb": 1005,
+      "name": "Isaias",
+      "classification": "TS",
+      "intensity_kt": 35,
+      "lat": 22.0,
+      "lon": -94.1,
+      "movement": "75 8 kt",
+      "pressure_mb": 1004,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT4.shtml",
       "track": []
     },
@@ -19,9 +19,9 @@
       "name": "Rachel",
       "classification": "HU",
       "intensity_kt": 70,
-      "lat": 20.4,
-      "lon": -120.4,
-      "movement": "285 6 kt",
+      "lat": 20.6,
+      "lon": -121.2,
+      "movement": "290 7 kt",
       "pressure_mb": 979,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP3.shtml",
       "track": []
