@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-10-10T16:44:05.178580+00:00",
+  "fetched_at": "2026-10-10T20:58:52.054340+00:00",
   "active_storm_count": 3,
   "storms": [
     {
       "id": "al092026",
       "name": "Isaias",
       "classification": "PTC",
-      "intensity_kt": 30,
-      "lat": 32.8,
-      "lon": -86.8,
-      "movement": "335 10 kt",
-      "pressure_mb": 1006,
+      "intensity_kt": 25,
+      "lat": 33.5,
+      "lon": -86.9,
+      "movement": "25 15 kt",
+      "pressure_mb": 1007,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT4.shtml",
       "track": []
     },
@@ -18,11 +18,11 @@
       "id": "ep182026",
       "name": "Rachel",
       "classification": "TS",
-      "intensity_kt": 50,
-      "lat": 25.5,
-      "lon": -119.6,
-      "movement": "55 22 kt",
-      "pressure_mb": 992,
+      "intensity_kt": 55,
+      "lat": 27.0,
+      "lon": -118.3,
+      "movement": "25 30 kt",
+      "pressure_mb": 989,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP3.shtml",
       "track": []
     },
@@ -33,8 +33,8 @@
       "intensity_kt": 130,
       "lat": 17.4,
       "lon": -104.8,
-      "movement": "350 3 kt",
-      "pressure_mb": 938,
+      "movement": "350 1 kt",
+      "pressure_mb": 933,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP5.shtml",
       "track": []
     }
