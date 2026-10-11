@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-11T17:09:49.464363+00:00",
+  "fetched_at": "2026-10-11T21:19:55.854614+00:00",
   "active_storm_count": 3,
   "storms": [
     {
@@ -30,11 +30,11 @@
       "id": "ep202026",
       "name": "Simon",
       "classification": "HU",
-      "intensity_kt": 125,
-      "lat": 19.2,
-      "lon": -105.3,
-      "movement": "345 7 kt",
-      "pressure_mb": 937,
+      "intensity_kt": 115,
+      "lat": 19.6,
+      "lon": -105.8,
+      "movement": "335 6 kt",
+      "pressure_mb": 947,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP5.shtml",
       "track": []
     }
