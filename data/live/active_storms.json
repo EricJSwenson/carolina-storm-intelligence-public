@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-10-15T02:40:48.038801+00:00",
+  "fetched_at": "2026-10-15T10:39:49.806192+00:00",
   "active_storm_count": 2,
   "storms": [
     {
       "id": "ep212026",
       "name": "Trudy",
-      "classification": "TS",
-      "intensity_kt": 60,
-      "lat": 12.4,
-      "lon": -100.8,
-      "movement": "310 8 kt",
-      "pressure_mb": 994,
+      "classification": "HU",
+      "intensity_kt": 65,
+      "lat": 12.9,
+      "lon": -101.6,
+      "movement": "305 9 kt",
+      "pressure_mb": 989,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "track": []
     },
@@ -18,11 +18,11 @@
       "id": "ep202026",
       "name": "Simon",
       "classification": "TS",
-      "intensity_kt": 55,
-      "lat": 19.1,
-      "lon": -108.6,
-      "movement": "220 5 kt",
-      "pressure_mb": 991,
+      "intensity_kt": 50,
+      "lat": 19.2,
+      "lon": -108.5,
+      "movement": "None None kt",
+      "pressure_mb": 996,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP5.shtml",
       "track": []
     }
