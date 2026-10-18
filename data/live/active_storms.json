@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-10-18T15:11:29.869624+00:00",
+  "fetched_at": "2026-10-18T19:56:04.687194+00:00",
   "active_storm_count": 1,
   "storms": [
     {
       "id": "ep212026",
       "name": "Trudy",
       "classification": "HU",
-      "intensity_kt": 90,
-      "lat": 19.1,
+      "intensity_kt": 85,
+      "lat": 19.3,
       "lon": -106.8,
       "movement": "325 8 kt",
-      "pressure_mb": 970,
+      "pressure_mb": 974,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "track": []
     }
