@@ -1,5 +1,18 @@
 {
-  "fetched_at": "2026-10-21T10:57:44.166040+00:00",
-  "active_storm_count": 0,
-  "storms": []
+  "fetched_at": "2026-10-21T16:24:30.040708+00:00",
+  "active_storm_count": 1,
+  "storms": [
+    {
+      "id": "ep222026",
+      "name": "Twenty-Two-E",
+      "classification": "TD",
+      "intensity_kt": 30,
+      "lat": 9.5,
+      "lon": -99.3,
+      "movement": "265 7 kt",
+      "pressure_mb": 1005,
+      "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
+      "track": []
+    }
+  ]
 }
