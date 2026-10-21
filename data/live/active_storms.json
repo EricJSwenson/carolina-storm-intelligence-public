@@ -1,16 +1,28 @@
 {
-  "fetched_at": "2026-10-21T16:24:30.040708+00:00",
-  "active_storm_count": 1,
+  "fetched_at": "2026-10-21T21:05:29.085164+00:00",
+  "active_storm_count": 2,
   "storms": [
     {
+      "id": "al102026",
+      "name": "Josephine",
+      "classification": "STS",
+      "intensity_kt": 55,
+      "lat": 37.4,
+      "lon": -69.5,
+      "movement": "10 6 kt",
+      "pressure_mb": 990,
+      "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT5.shtml",
+      "track": []
+    },
+    {
       "id": "ep222026",
-      "name": "Twenty-Two-E",
-      "classification": "TD",
-      "intensity_kt": 30,
-      "lat": 9.5,
-      "lon": -99.3,
+      "name": "Vance",
+      "classification": "TS",
+      "intensity_kt": 35,
+      "lat": 9.4,
+      "lon": -99.8,
       "movement": "265 7 kt",
-      "pressure_mb": 1005,
+      "pressure_mb": 1003,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "track": []
     }
