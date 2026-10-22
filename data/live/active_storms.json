@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-22T02:47:45.816990+00:00",
+  "fetched_at": "2026-10-22T10:57:05.787093+00:00",
   "active_storm_count": 2,
   "storms": [
     {
@@ -7,10 +7,10 @@
       "name": "Josephine",
       "classification": "STS",
       "intensity_kt": 55,
-      "lat": 37.4,
-      "lon": -69.5,
-      "movement": "10 6 kt",
-      "pressure_mb": 990,
+      "lat": 38.7,
+      "lon": -68.3,
+      "movement": "40 13 kt",
+      "pressure_mb": 988,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT5.shtml",
       "track": []
     },
@@ -18,11 +18,11 @@
       "id": "ep222026",
       "name": "Vance",
       "classification": "TS",
-      "intensity_kt": 35,
-      "lat": 9.4,
-      "lon": -99.8,
-      "movement": "265 7 kt",
-      "pressure_mb": 1003,
+      "intensity_kt": 45,
+      "lat": 9.7,
+      "lon": -101.5,
+      "movement": "275 7 kt",
+      "pressure_mb": 1000,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "track": []
     }
