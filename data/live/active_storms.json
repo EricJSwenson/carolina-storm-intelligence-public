@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-10-23T20:51:09.510887+00:00",
+  "fetched_at": "2026-10-24T02:48:19.493725+00:00",
   "active_storm_count": 1,
   "storms": [
     {
       "id": "ep222026",
       "name": "Vance",
       "classification": "HU",
-      "intensity_kt": 90,
-      "lat": 11.2,
-      "lon": -102.3,
-      "movement": "325 5 kt",
-      "pressure_mb": 971,
+      "intensity_kt": 95,
+      "lat": 12.0,
+      "lon": -102.6,
+      "movement": "345 7 kt",
+      "pressure_mb": 965,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "track": []
     }
