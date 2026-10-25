@@ -1,17 +1,29 @@
 {
-  "fetched_at": "2026-10-25T10:29:51.958264+00:00",
-  "active_storm_count": 1,
+  "fetched_at": "2026-10-25T15:21:58.124620+00:00",
+  "active_storm_count": 2,
   "storms": [
     {
       "id": "ep222026",
       "name": "Vance",
       "classification": "HU",
-      "intensity_kt": 75,
+      "intensity_kt": 65,
       "lat": 14.3,
-      "lon": -103.4,
-      "movement": "340 5 kt",
-      "pressure_mb": 980,
+      "lon": -103.8,
+      "movement": "315 5 kt",
+      "pressure_mb": 989,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
+      "track": []
+    },
+    {
+      "id": "cp032026",
+      "name": "Three-C",
+      "classification": "TD",
+      "intensity_kt": 30,
+      "lat": 14.6,
+      "lon": -179.3,
+      "movement": "75 7 kt",
+      "pressure_mb": 1006,
+      "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP3.shtml",
       "track": []
     }
   ]
