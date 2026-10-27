@@ -1,27 +1,27 @@
 {
-  "fetched_at": "2026-10-26T22:09:22.178347+00:00",
+  "fetched_at": "2026-10-27T03:12:54.519014+00:00",
   "active_storm_count": 2,
   "storms": [
     {
       "id": "ep222026",
       "name": "Vance",
       "classification": "TS",
-      "intensity_kt": 55,
-      "lat": 15.4,
-      "lon": -106.1,
-      "movement": "280 6 kt",
-      "pressure_mb": 997,
+      "intensity_kt": 45,
+      "lat": 15.5,
+      "lon": -106.3,
+      "movement": "275 5 kt",
+      "pressure_mb": 999,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "track": []
     },
     {
       "id": "cp032026",
       "name": "Olana",
-      "classification": "TD",
-      "intensity_kt": 30,
-      "lat": 13.6,
-      "lon": -176.6,
-      "movement": "140 3 kt",
+      "classification": "PTC",
+      "intensity_kt": 25,
+      "lat": 13.0,
+      "lon": -175.9,
+      "movement": "150 7 kt",
       "pressure_mb": 1007,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP3.shtml",
       "track": []
