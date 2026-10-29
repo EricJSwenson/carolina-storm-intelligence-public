@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-28T22:04:36.795871+00:00",
+  "fetched_at": "2026-10-29T03:49:40.660410+00:00",
   "active_storm_count": 1,
   "storms": [
     {
@@ -7,10 +7,10 @@
       "name": "Vance",
       "classification": "TD",
       "intensity_kt": 30,
-      "lat": 20.1,
-      "lon": -109.1,
-      "movement": "10 9 kt",
-      "pressure_mb": 1006,
+      "lat": 21.1,
+      "lon": -108.1,
+      "movement": "25 13 kt",
+      "pressure_mb": 1002,
       "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "track": []
     }
