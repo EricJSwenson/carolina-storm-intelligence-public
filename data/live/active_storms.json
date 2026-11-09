@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-11-09T03:58:32.125393+00:00",
+  "fetched_at": "2026-11-09T14:51:52.454383+00:00",
   "active_storm_count": 1,
   "storms": [
     {
       "id": "cp042026",
       "name": "Pena",
       "classification": "TS",
-      "intensity_kt": 40,
+      "intensity_kt": 35,
       "lat": 11.4,
-      "lon": -157.6,
-      "movement": "260 8 kt",
-      "pressure_mb": 1002,
+      "lon": -159.5,
+      "movement": "265 9 kt",
+      "pressure_mb": 1004,
       "advisory_url": "https://www.nhc.noaa.gov/text/HFOTCPCP4.shtml",
       "track": []
     }
